@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ccbank?allowPublicKeyRetrieval=true&amp;useTimezone=true&amp;serverTimezone=America/Sao_Paulo&amp;useSSL=false</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.jdbc.use_get_generated_keys">true</property>
+    <mapping class="br.com.unifor.ccbankapi.domain.Cidade"/>
+    <!--mapping class="br.com.unifor.ccbankapi.domain.Conta"/>
+    <mapping class="br.com.unifor.ccbankapi.domain.Endereco"/>
+    <mapping class="br.com.unifor.ccbankapi.domain.Historico"/>
+    <mapping class="br.com.unifor.ccbankapi.domain.Pessoa"/>
+    <mapping class="br.com.unifor.ccbankapi.domain.Usuario"/-->
+  </session-factory>
+</hibernate-configuration>
